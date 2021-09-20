@@ -11,9 +11,17 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		475FE88E1B7976D7D5A4E644 /* libPods-rsocket-rsocketTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C30900EEB8969455F4EFC824 /* libPods-rsocket-rsocketTests.a */; };
+		30A0FC1BADAE607F0A1E4B31 /* libPods-rsocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8497F113581980AC63077BB0 /* libPods-rsocket.a */; };
+		47C6FD3E26F8CEEB008ACE34 /* BridgingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C6FD3D26F8CEEB008ACE34 /* BridgingFile.swift */; };
+		47C6FD4126F8D16C008ACE34 /* RSocketTCPTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4026F8D16C008ACE34 /* RSocketTCPTransport */; };
+		47C6FD4326F8D16C008ACE34 /* RSocketCore in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4226F8D16C008ACE34 /* RSocketCore */; };
+		47C6FD4526F8D16C008ACE34 /* RSocketTSChannel in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4426F8D16C008ACE34 /* RSocketTSChannel */; };
+		47C6FD4726F8D16C008ACE34 /* RSocketCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4626F8D16C008ACE34 /* RSocketCombine */; };
+		47C6FD4926F8D16C008ACE34 /* RSocketReactiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4826F8D16C008ACE34 /* RSocketReactiveSwift */; };
+		47C6FD4B26F8D16C008ACE34 /* RSocketNIOChannel in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4A26F8D16C008ACE34 /* RSocketNIOChannel */; };
+		47C6FD4D26F8D16C008ACE34 /* RSocketWSTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4C26F8D16C008ACE34 /* RSocketWSTransport */; };
+		67C350B38AE48812FBF449A4 /* libPods-rsocket-rsocketTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C16F8FCCBA876DDB7FB7B8FC /* libPods-rsocket-rsocketTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A22473A83069B290DBB139BA /* libPods-rsocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA8F90F22ACEC05C8F93ACA /* libPods-rsocket.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +44,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = rsocket/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rsocket/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rsocket/main.m; sourceTree = "<group>"; };
-		246931BC574EDA59CBB27EBA /* Pods-rsocket-rsocketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket-rsocketTests.debug.xcconfig"; path = "Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests.debug.xcconfig"; sourceTree = "<group>"; };
-		455880C3DC5863B2205158B6 /* Pods-rsocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket.debug.xcconfig"; path = "Target Support Files/Pods-rsocket/Pods-rsocket.debug.xcconfig"; sourceTree = "<group>"; };
-		4DA8F90F22ACEC05C8F93ACA /* libPods-rsocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rsocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AB12885BC270EB1D2A9752 /* Pods-rsocket-rsocketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket-rsocketTests.release.xcconfig"; path = "Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests.release.xcconfig"; sourceTree = "<group>"; };
+		47C6FD3C26F8CEEA008ACE34 /* rsocket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rsocket-Bridging-Header.h"; sourceTree = "<group>"; };
+		47C6FD3D26F8CEEB008ACE34 /* BridgingFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgingFile.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rsocket/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		98EE96FB93F7F398A3C47305 /* Pods-rsocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket.release.xcconfig"; path = "Target Support Files/Pods-rsocket/Pods-rsocket.release.xcconfig"; sourceTree = "<group>"; };
-		C0C97F4DD6CECCC9814DA8CC /* Pods-rsocket-rsocketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket-rsocketTests.release.xcconfig"; path = "Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests.release.xcconfig"; sourceTree = "<group>"; };
-		C30900EEB8969455F4EFC824 /* libPods-rsocket-rsocketTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rsocket-rsocketTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8497F113581980AC63077BB0 /* libPods-rsocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rsocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E0720A13E58464A6EF0C80 /* Pods-rsocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket.release.xcconfig"; path = "Target Support Files/Pods-rsocket/Pods-rsocket.release.xcconfig"; sourceTree = "<group>"; };
+		C16F8FCCBA876DDB7FB7B8FC /* libPods-rsocket-rsocketTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rsocket-rsocketTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7225838988D01E226FFF6F /* Pods-rsocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket.debug.xcconfig"; path = "Target Support Files/Pods-rsocket/Pods-rsocket.debug.xcconfig"; sourceTree = "<group>"; };
+		D90CECB29AC6C7F881A456EB /* Pods-rsocket-rsocketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket-rsocketTests.debug.xcconfig"; path = "Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				475FE88E1B7976D7D5A4E644 /* libPods-rsocket-rsocketTests.a in Frameworks */,
+				67C350B38AE48812FBF449A4 /* libPods-rsocket-rsocketTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +69,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A22473A83069B290DBB139BA /* libPods-rsocket.a in Frameworks */,
+				47C6FD4326F8D16C008ACE34 /* RSocketCore in Frameworks */,
+				47C6FD4126F8D16C008ACE34 /* RSocketTCPTransport in Frameworks */,
+				30A0FC1BADAE607F0A1E4B31 /* libPods-rsocket.a in Frameworks */,
+				47C6FD4526F8D16C008ACE34 /* RSocketTSChannel in Frameworks */,
+				47C6FD4D26F8D16C008ACE34 /* RSocketWSTransport in Frameworks */,
+				47C6FD4726F8D16C008ACE34 /* RSocketCombine in Frameworks */,
+				47C6FD4B26F8D16C008ACE34 /* RSocketNIOChannel in Frameworks */,
+				47C6FD4926F8D16C008ACE34 /* RSocketReactiveSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,21 +117,20 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				4DA8F90F22ACEC05C8F93ACA /* libPods-rsocket.a */,
-				C30900EEB8969455F4EFC824 /* libPods-rsocket-rsocketTests.a */,
+				8497F113581980AC63077BB0 /* libPods-rsocket.a */,
+				C16F8FCCBA876DDB7FB7B8FC /* libPods-rsocket-rsocketTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4CA737B629C5F506FCCB5EB6 /* Pods */ = {
+		54EB4ABC8AFFCEA9D2FEB1D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				455880C3DC5863B2205158B6 /* Pods-rsocket.debug.xcconfig */,
-				98EE96FB93F7F398A3C47305 /* Pods-rsocket.release.xcconfig */,
-				246931BC574EDA59CBB27EBA /* Pods-rsocket-rsocketTests.debug.xcconfig */,
-				C0C97F4DD6CECCC9814DA8CC /* Pods-rsocket-rsocketTests.release.xcconfig */,
+				CB7225838988D01E226FFF6F /* Pods-rsocket.debug.xcconfig */,
+				A5E0720A13E58464A6EF0C80 /* Pods-rsocket.release.xcconfig */,
+				D90CECB29AC6C7F881A456EB /* Pods-rsocket-rsocketTests.debug.xcconfig */,
+				42AB12885BC270EB1D2A9752 /* Pods-rsocket-rsocketTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,12 +144,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				47C6FD3D26F8CEEB008ACE34 /* BridgingFile.swift */,
 				13B07FAE1A68108700A75B9A /* rsocket */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rsocketTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				4CA737B629C5F506FCCB5EB6 /* Pods */,
+				54EB4ABC8AFFCEA9D2FEB1D8 /* Pods */,
+				47C6FD3C26F8CEEA008ACE34 /* rsocket-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -156,12 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "rsocketTests" */;
 			buildPhases = (
-				75D2F90A5828A5386C75A7F7 /* [CP] Check Pods Manifest.lock */,
+				00F4F84B14195C3D68949749 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				8E0C2A16F958C4F16CC64A9B /* [CP] Embed Pods Frameworks */,
-				083E809C66249ECC95D2945D /* [CP] Copy Pods Resources */,
+				14A59A2856399F87E13710E6 /* [CP] Embed Pods Frameworks */,
+				8A29A93137758E2AB936A787 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,20 +195,29 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "rsocket" */;
 			buildPhases = (
-				FD269B6DE97ABB2850E4AF9F /* [CP] Check Pods Manifest.lock */,
+				F0459A30E8D65284BE38BAE6 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C5E845E6F689AEAF51188402 /* [CP] Embed Pods Frameworks */,
-				54A19462CCA748B18F150F04 /* [CP] Copy Pods Resources */,
+				909CAA4C5D52436C28F57664 /* [CP] Embed Pods Frameworks */,
+				61DA5C47DFC83852A0F21F50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = rsocket;
+			packageProductDependencies = (
+				47C6FD4026F8D16C008ACE34 /* RSocketTCPTransport */,
+				47C6FD4226F8D16C008ACE34 /* RSocketCore */,
+				47C6FD4426F8D16C008ACE34 /* RSocketTSChannel */,
+				47C6FD4626F8D16C008ACE34 /* RSocketCombine */,
+				47C6FD4826F8D16C008ACE34 /* RSocketReactiveSwift */,
+				47C6FD4A26F8D16C008ACE34 /* RSocketNIOChannel */,
+				47C6FD4C26F8D16C008ACE34 /* RSocketWSTransport */,
+			);
 			productName = rsocket;
 			productReference = 13B07F961A680F5B00A75B9A /* rsocket.app */;
 			productType = "com.apple.product-type.application";
@@ -208,7 +235,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -221,6 +248,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				47C6FD3F26F8D16C008ACE34 /* XCRemoteSwiftPackageReference "rsocket-swift" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,41 +295,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		083E809C66249ECC95D2945D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		54A19462CCA748B18F150F04 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rsocket/Pods-rsocket-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rsocket/Pods-rsocket-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rsocket/Pods-rsocket-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75D2F90A5828A5386C75A7F7 /* [CP] Check Pods Manifest.lock */ = {
+		00F4F84B14195C3D68949749 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,7 +317,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8E0C2A16F958C4F16CC64A9B /* [CP] Embed Pods Frameworks */ = {
+		14A59A2856399F87E13710E6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,7 +334,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5E845E6F689AEAF51188402 /* [CP] Embed Pods Frameworks */ = {
+		61DA5C47DFC83852A0F21F50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rsocket/Pods-rsocket-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rsocket/Pods-rsocket-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rsocket/Pods-rsocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A29A93137758E2AB936A787 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		909CAA4C5D52436C28F57664 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,26 +385,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rsocket/Pods-rsocket-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD10A7F022414F080027D42C /* Start Packager */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Start Packager";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FD269B6DE97ABB2850E4AF9F /* [CP] Check Pods Manifest.lock */ = {
+		F0459A30E8D65284BE38BAE6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,6 +407,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -412,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				47C6FD3E26F8CEEB008ACE34 /* BridgingFile.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,8 +460,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 246931BC574EDA59CBB27EBA /* Pods-rsocket-rsocketTests.debug.xcconfig */;
+			baseConfigurationReference = D90CECB29AC6C7F881A456EB /* Pods-rsocket-rsocketTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -456,8 +488,9 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0C97F4DD6CECCC9814DA8CC /* Pods-rsocket-rsocketTests.release.xcconfig */;
+			baseConfigurationReference = 42AB12885BC270EB1D2A9752 /* Pods-rsocket-rsocketTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = rsocketTests/Info.plist;
@@ -480,7 +513,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 455880C3DC5863B2205158B6 /* Pods-rsocket.debug.xcconfig */;
+			baseConfigurationReference = CB7225838988D01E226FFF6F /* Pods-rsocket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -498,6 +531,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rsocket;
+				SWIFT_OBJC_BRIDGING_HEADER = "rsocket-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -506,7 +540,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98EE96FB93F7F398A3C47305 /* Pods-rsocket.release.xcconfig */;
+			baseConfigurationReference = A5E0720A13E58464A6EF0C80 /* Pods-rsocket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -523,6 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rsocket;
+				SWIFT_OBJC_BRIDGING_HEADER = "rsocket-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -561,6 +596,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -582,11 +618,7 @@
 					/usr/lib/swift,
 					"$(inherited)",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
-					"\"$(inherited)\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -626,6 +658,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -640,11 +673,7 @@
 					/usr/lib/swift,
 					"$(inherited)",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
-					"\"$(inherited)\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -682,6 +711,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47C6FD3F26F8D16C008ACE34 /* XCRemoteSwiftPackageReference "rsocket-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rsocket/rsocket-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47C6FD4026F8D16C008ACE34 /* RSocketTCPTransport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C6FD3F26F8D16C008ACE34 /* XCRemoteSwiftPackageReference "rsocket-swift" */;
+			productName = RSocketTCPTransport;
+		};
+		47C6FD4226F8D16C008ACE34 /* RSocketCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C6FD3F26F8D16C008ACE34 /* XCRemoteSwiftPackageReference "rsocket-swift" */;
+			productName = RSocketCore;
+		};
+		47C6FD4426F8D16C008ACE34 /* RSocketTSChannel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C6FD3F26F8D16C008ACE34 /* XCRemoteSwiftPackageReference "rsocket-swift" */;
+			productName = RSocketTSChannel;
+		};
+		47C6FD4626F8D16C008ACE34 /* RSocketCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C6FD3F26F8D16C008ACE34 /* XCRemoteSwiftPackageReference "rsocket-swift" */;
+			productName = RSocketCombine;
+		};
+		47C6FD4826F8D16C008ACE34 /* RSocketReactiveSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C6FD3F26F8D16C008ACE34 /* XCRemoteSwiftPackageReference "rsocket-swift" */;
+			productName = RSocketReactiveSwift;
+		};
+		47C6FD4A26F8D16C008ACE34 /* RSocketNIOChannel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C6FD3F26F8D16C008ACE34 /* XCRemoteSwiftPackageReference "rsocket-swift" */;
+			productName = RSocketNIOChannel;
+		};
+		47C6FD4C26F8D16C008ACE34 /* RSocketWSTransport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C6FD3F26F8D16C008ACE34 /* XCRemoteSwiftPackageReference "rsocket-swift" */;
+			productName = RSocketWSTransport;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
