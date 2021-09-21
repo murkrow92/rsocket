@@ -48,7 +48,7 @@
 		42AB12885BC270EB1D2A9752 /* Pods-rsocket-rsocketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket-rsocketTests.release.xcconfig"; path = "Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests.release.xcconfig"; sourceTree = "<group>"; };
 		47E2B26426FA305600175178 /* RSocketModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSocketModule.swift; sourceTree = "<group>"; };
 		47E2B26926FA33C400175178 /* RSocketModuleBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSocketModuleBridge.m; sourceTree = "<group>"; };
-		47E2B26B26FA340E00175178 /* RSocketModule-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSocketModule-Bridging-Header.h"; sourceTree = "<group>"; };
+		47E2B26C26FA360400175178 /* rsocket-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rsocket-Bridging-Header.h"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rsocket/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8497F113581980AC63077BB0 /* libPods-rsocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rsocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E0720A13E58464A6EF0C80 /* Pods-rsocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket.release.xcconfig"; path = "Target Support Files/Pods-rsocket/Pods-rsocket.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				47E2B26B26FA340E00175178 /* RSocketModule-Bridging-Header.h */,
+				47E2B26C26FA360400175178 /* rsocket-Bridging-Header.h */,
 				47E2B26926FA33C400175178 /* RSocketModuleBridge.m */,
 				47E2B26426FA305600175178 /* RSocketModule.swift */,
 				13B07FAE1A68108700A75B9A /* rsocket */,
