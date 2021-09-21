@@ -20,7 +20,9 @@ const { RSocketModule } = NativeModules;
 console.log('RSocket Module:', RSocketModule);
 
 const App = () => {
-  const onPress = () => {};
+  const onPress = () => {
+    RSocketModule.addEvent('Hello', 'World');
+  };
 
   return (
     <SafeAreaView>
