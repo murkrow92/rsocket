@@ -12,7 +12,6 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		30A0FC1BADAE607F0A1E4B31 /* libPods-rsocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8497F113581980AC63077BB0 /* libPods-rsocket.a */; };
-		47C6FD3E26F8CEEB008ACE34 /* BridgingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C6FD3D26F8CEEB008ACE34 /* BridgingFile.swift */; };
 		47C6FD4126F8D16C008ACE34 /* RSocketTCPTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4026F8D16C008ACE34 /* RSocketTCPTransport */; };
 		47C6FD4326F8D16C008ACE34 /* RSocketCore in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4226F8D16C008ACE34 /* RSocketCore */; };
 		47C6FD4526F8D16C008ACE34 /* RSocketTSChannel in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4426F8D16C008ACE34 /* RSocketTSChannel */; };
@@ -20,6 +19,8 @@
 		47C6FD4926F8D16C008ACE34 /* RSocketReactiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4826F8D16C008ACE34 /* RSocketReactiveSwift */; };
 		47C6FD4B26F8D16C008ACE34 /* RSocketNIOChannel in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4A26F8D16C008ACE34 /* RSocketNIOChannel */; };
 		47C6FD4D26F8D16C008ACE34 /* RSocketWSTransport in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6FD4C26F8D16C008ACE34 /* RSocketWSTransport */; };
+		47E2B26526FA305600175178 /* RSocketModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B26426FA305600175178 /* RSocketModule.swift */; };
+		47E2B26A26FA33C400175178 /* RSocketModuleBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B26926FA33C400175178 /* RSocketModuleBridge.m */; };
 		67C350B38AE48812FBF449A4 /* libPods-rsocket-rsocketTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C16F8FCCBA876DDB7FB7B8FC /* libPods-rsocket-rsocketTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -45,8 +46,9 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rsocket/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rsocket/main.m; sourceTree = "<group>"; };
 		42AB12885BC270EB1D2A9752 /* Pods-rsocket-rsocketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket-rsocketTests.release.xcconfig"; path = "Target Support Files/Pods-rsocket-rsocketTests/Pods-rsocket-rsocketTests.release.xcconfig"; sourceTree = "<group>"; };
-		47C6FD3C26F8CEEA008ACE34 /* rsocket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rsocket-Bridging-Header.h"; sourceTree = "<group>"; };
-		47C6FD3D26F8CEEB008ACE34 /* BridgingFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgingFile.swift; sourceTree = "<group>"; };
+		47E2B26426FA305600175178 /* RSocketModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSocketModule.swift; sourceTree = "<group>"; };
+		47E2B26926FA33C400175178 /* RSocketModuleBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSocketModuleBridge.m; sourceTree = "<group>"; };
+		47E2B26B26FA340E00175178 /* RSocketModule-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSocketModule-Bridging-Header.h"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rsocket/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8497F113581980AC63077BB0 /* libPods-rsocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rsocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E0720A13E58464A6EF0C80 /* Pods-rsocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rsocket.release.xcconfig"; path = "Target Support Files/Pods-rsocket/Pods-rsocket.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,14 +146,15 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				47C6FD3D26F8CEEB008ACE34 /* BridgingFile.swift */,
+				47E2B26B26FA340E00175178 /* RSocketModule-Bridging-Header.h */,
+				47E2B26926FA33C400175178 /* RSocketModuleBridge.m */,
+				47E2B26426FA305600175178 /* RSocketModule.swift */,
 				13B07FAE1A68108700A75B9A /* rsocket */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rsocketTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				54EB4ABC8AFFCEA9D2FEB1D8 /* Pods */,
-				47C6FD3C26F8CEEA008ACE34 /* rsocket-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -442,8 +445,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				47C6FD3E26F8CEEB008ACE34 /* BridgingFile.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				47E2B26A26FA33C400175178 /* RSocketModuleBridge.m in Sources */,
+				47E2B26526FA305600175178 /* RSocketModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
